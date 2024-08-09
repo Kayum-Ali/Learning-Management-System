@@ -3,37 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <!-- icon link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Learning Management System</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-     <header class="max-w-[1440px]  mx-auto">
-
+    <header class="max-w-[1440px] container mx-auto">
       <!-- nav section start -->
 
-      <nav class="h-[65px] flex justify-between items-center  bg-white px-6">
-            <div class="flex items-center">
-              <img class="w-8 h-10" src="images/logo.png" alt="">
-              <a class="text-base font-medium" href="#">Byway</a>
-            </div>
-            <a class="hidden md:hidden lg:block" href="#">Categories</a>
+      <nav class="h-[65px] flex justify-between items-center bg-gray-100 px-6">
+        <div class="flex items-center">
+          <img class="w-8 h-10" src="images/logo.png" alt="" />
+          <a class="text-2xl font-medium" href="#">Byway</a>
+        </div>
+        <a class="hidden md:hidden text-xl lg:block" href="#">Categories</a>
 
-            <div class="flex text-center border border-gray-400 rounded-lg py-1 ">
-                  <button class="flex justify-center items-center h-6 w-10 rounded-lg  md:rounded-l-none      md:border-l-0">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                  </button> 
-                  <input type="text" placeholder="Search" class="hidden md:block md:w-[380px] lg:w-[460px] rounded-lg h-6  px-3 py-2 focus:outline-none  " >
-            </div>
-              <a class="hidden md:hidden lg:block mr-5" href="#">Teach on Byway</a>  
+        <div class="flex text-center border border-gray-400 rounded-lg py-1">
+          <button
+            class="flex justify-center items-center h-6 w-10 rounded-lg md:rounded-l-none md:border-l-0"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input
+            type="text"
+            placeholder="Search"
+            class="md:block md:w-[380px] w-[70px] lg:w-[460px] rounded-lg h-6 px-3 py-2 focus:outline-none"
+          />
+        </div>
+        <a class="hidden md:hidden lg:block mr-5 text-xl" href="#"
+          >Teach on Byway</a
+        >
 
-            <div class="flex items-center gap-x-4">
-              <i class="hidden md:block fa-solid fa-cart-shopping"></i>
-              <button class="border border-gray-400 px-2 py-1">Log In</button>
-              <button class="bg-gray-700 text-white px-2 py-1">Sign Up</button>
-            </div>
+        <div class="flex items-center gap-2 md:gap-3 lg:gap-3">
+          <i
+            class="hidden md:block text-2xl lg:block fa-solid fa-cart-shopping"
+          ></i>
+          <button class="border border-gray-400 px-2 rounded py-1">
+            Log In
+          </button>
+          <button class="bg-gray-700 text-white px-2 rounded py-1">
+            Sign Up
+          </button>
+        </div>
       </nav>
-     </header>
+    </header>
   </body>
 </html>
