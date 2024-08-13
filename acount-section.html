@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome link -->
+
+    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- tailwind and daisy ui link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Acount section</title>
+</head>
+<body>
+    <section class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-5">
+            <div class="">
+                <img src="images/acount1.jfif" alt="">
+            </div>
+
+            <div class="*input[bg-gray-200]">
+
+                <div class="space-y-2">
+                    <label class="text-[18px] font-semibold" for="">Full Name</label> <br>
+                    <div class="flex gap-x-4">
+                        <input class="w-full p-2 bg-white  rounded-lg border border-[#E2E8F0] shadow-sm focus:outline-none focus:border focus:border-gray-400" type="text" placeholder="First Name">
+                        <input class="w-full p-2 bg-white  rounded-lg border border-[#E2E8F0] shadow-sm focus:outline-none focus:border focus:border-gray-400" type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                   <label class="text-[18px] mb-2 font-semibold for="">Username</label> <br>
+                   <input class="w-full p-2 bg-white  rounded-lg border border-[#E2E8F0] shadow-sm focus:outline-none focus:border focus:border-gray-400" type="text" placeholder="Username"> 
+                <div class="space-y-2">
+                    <label class="text-[18px] font-semibold for="">Email</label> <br>
+                    <input class="w-full p-2 bg-white  rounded-lg border border-[#E2E8F0] shadow-sm focus:outline-none focus:border focus:border-gray-400" type="email" placeholder="Email">
+                </div>
+
+                <div class="flex flex-1 gap-x-4">
+                    <div class="flex-1 space-y-2">
+                        <label class="text-[18px] font-semibold for="">Password</label>
+                        <input class="w-full p-2 bg-white  rounded-lg border border-[#E2E8F0] shadow-sm focus:outline-none focus:border focus:border-gray-400" type="password" placeholder="Enter Password">
+                    </div>
+                    <div class="flex-1 space-y-2">
+                        <label class="text-[18px] font-semibold for="">Confirm Password</label>
+                    <input class="w-full p-2 bg-white  rounded-lg border border-[#E2E8F0] shadow-sm focus:outline-none focus:border focus:border-gray-400" type="password" placeholder="Confirm Password">
+                    </div>
+                </div>
+                <button class="font-semibold text-[16px] rounded-lg mt-4 bg-[#020617] text-white py-3 px-6 ">Create Account                   
+                </button>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
