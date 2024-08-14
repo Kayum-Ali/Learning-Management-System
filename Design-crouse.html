@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Design Crouse</title>
+</head>
+<body>
+    <section class="container mx-auto px-5 lg:px-0">
+        <div>
+            <h1 class=" text-[40px] font-bold">Design Courses</h1>
+            <h3 class="text-[24px] font-semibold">All Development Courses</h3>
+            <div class="flex justify-between items-center">
+                <button class="flex items-center gap-4 border border-gray-800 py-2 px-6 rounded-lg mt-3">
+                   <i class="fa-solid fa-bars"></i>
+                    <h3>Filter</h3>
+                </button>
+                <div class="flex items-center gap-x-2">
+                    <h2>Sort By</h2>
+                    <select class="focus:outline-none select select-bordered select-sm w-28 max-w-xs">
+                    <option disabled selected>Relevance</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- card container section start -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-10 lg:gap-x-4 gap-y-8 lg:gap-y-0 mt-4">
+
+            <div class="hidden lg:flex relative col-span-2 ">
+
+                <div tabindex="0" class="collapse collapse-arrow  ">
+                    <div class="collapse-title text-[18px] font-medium ">Rating</div>
+                    <div class="collapse-content">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i><br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i><br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <br>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div> 
+                
+                 <div tabindex="0" class="absolute top-44 left-0 collapse collapse-arrow border-base-300 ">
+                    <div class="collapse-title text-[16px] font-medium">Number of Chapters</div>
+                    <div class="collapse-content">
+                        <div class="form-control w-36">
+                            <label class="cursor-pointer label leading-none">
+                                <input type="checkbox" checked="checked" class=" checkbox checkbox-sm" />
+                                <span class="label-text">1-10</span>
+                            </label>
+                            <label class="cursor-pointer label leading-none">
+                                <input type="checkbox" checked="checked" class="checkbox checkbox-sm" />
+                                <span class="label-text">10-15</span>
+                            </label>
+                            <label class="cursor-pointer label leading-none">
+                                <input type="checkbox" checked="checked" class="checkbox checkbox-sm" />
+                                <span class="label-text">15-20</span>
+                            </label>
+                            <label class="cursor-pointer label leading-none">
+                                <input type="checkbox" checked="checked" class="checkbox checkbox-sm" />
+                                <span class="label-text">20-25</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div tabindex="0" class="absolute left-0 top-[380px] collapse collapse-arrow ">
+                    <div class="collapse-title text-[18px] font-medium ">Price</div>
+                </div>
+                <div tabindex="0" class="absolute left-0 top-[460px] collapse collapse-arrow ">
+                    <div class="collapse-title text-[18px] font-medium ">Category</div>
+                </div>
+               
+            </div>
+
+            <!-- card items-->
+
+            <div class="grid col-span-8 grid-cols-1 lg:grid-cols-3 gap-4">
+
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+                <div class="border p-3 rounded-xl shadow-2xl">
+                    <div class="space-y-2">
+                    <img
+                        class="w-full"
+                        src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                        alt=""
+                    />
+                    <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+                    <p class="opacity-95">By Ronald Richards</p>
+                    <div class="rating flex items-center">
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        checked="checked"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        <input
+                        type="radio"
+                        name="rating-2"
+                        class="mask mask-star-2 bg-orange-400"
+                        />
+                        (1200 rating)
+                    </div>
+                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                    <h2 class="text-2xl font-bold">$149.9</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- top instructor  -->
+      <section class="container mx-auto my-20  px-5 lg:px-0">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-bold">Top Instructors</h2>
+          <a href="#" class="text-[#3B82F6]">See All</a>
+        </div>
+
+        <div class="grid grid-cols-1 my-5 md:grid-cols-2 gap-5 lg:grid-cols-5">
+          <div class="border p-4 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full rounded-lg"
+                src="https://i.ibb.co/FW8PBbt/Rectangle-1136-2x.png"
+                alt=""
+              />
+              <h2 class="text-xl text-center font-bold mt-3">
+                Alexander Richards
+              </h2>
+              <p class="opacity-95 text-center">UI/UX Designer</p>
+              <hr class="py-2 border-gray-500" />
+              <div class="flex justify-between">
+                <div class="rating flex items-center">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <p class="text-[18px]">4.9</p>
+                </div>
+                <h3 class="font-medium">2400 students</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="border p-4 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full rounded-lg"
+                src="images/instructor1.avif"
+                alt=""
+              />
+              <h2 class="text-xl text-center font-bold mt-3">
+                Ronald Christopher
+              </h2>
+              <p class="opacity-95 text-center">UI/UX Designer</p>
+              <hr class="py-2 border-gray-500" />
+              <div class="flex justify-between">
+                <div class="rating flex items-center">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <p class="text-[18px]">4.9</p>
+                </div>
+                <h3 class="font-medium">2400 students</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="border p-4 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full rounded-lg"
+                src="images/instructor2.avif"
+                alt=""
+              />
+              <h2 class="text-xl text-center font-bold mt-3">
+                Matthew Anthony	
+              </h2>
+              <p class="opacity-95 text-center">UI/UX Designer</p>
+              <hr class="py-2 border-gray-500" />
+              <div class="flex justify-between">
+                <div class="rating flex items-center">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <p class="text-[18px]">4.9</p>
+                </div>
+                <h3 class="font-medium">2400 students</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="border p-4 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full rounded-lg"
+                src="images/instructor.webp"
+                alt=""
+              />
+              <h2 class="text-xl text-center font-bold mt-3">
+                Jonathan Richards
+              </h2>
+              <p class="opacity-95 text-center">UI/UX Designer</p>
+              <hr class="py-2 border-gray-500" />
+              <div class="flex justify-between">
+                <div class="rating flex items-center">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <p class="text-[18px]">4.9</p>
+                </div>
+                <h3 class="font-medium">2400 students</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="border p-4 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full rounded-lg"
+                src="images/instructor4.jpg"
+                alt=""
+              />
+              <h2 class="text-xl text-center font-bold mt-3">
+                Jonathan Brandon	
+              </h2>
+              <p class="opacity-95 text-center">UI/UX Designer</p>
+              <hr class="py-2 border-gray-500" />
+              <div class="flex justify-between">
+                <div class="rating flex items-center">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <p class="text-[18px]">4.9</p>
+                </div>
+                <h3 class="font-medium">2400 students</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- top courses  section start-->
+
+
+      <section class="container mx-auto my-10 px-5 lg:px-0">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-bold">Top Courses</h2>
+          <a href="#" class="text-[#3B82F6]">See All</a>
+        </div>
+
+        <div class="grid grid-cols-1 my-5 md:grid-cols-2 gap-5 lg:grid-cols-4">
+          <div class="border p-3 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full"
+                src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                alt=""
+              />
+              <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+              <p class="opacity-95">By Ronald Richards</p>
+              <div class="rating flex items-center">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                (1200 rating)
+              </div>
+              <p>22 Total Hours. 155 Lectures. Beginner</p>
+              <h2 class="text-2xl font-bold">$149.9</h2>
+            </div>
+          </div>
+
+          <div class="border p-3 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full"
+                src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                alt=""
+              />
+              <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+              <p class="opacity-95">By Ronald Richards</p>
+              <div class="rating flex items-center">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                (1200 rating)
+              </div>
+              <p>22 Total Hours. 155 Lectures. Beginner</p>
+              <h2 class="text-2xl font-bold">$149.9</h2>
+            </div>
+          </div>
+
+          <div class="border p-3 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full"
+                src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                alt=""
+              />
+              <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+              <p class="opacity-95">By Ronald Richards</p>
+              <div class="rating flex items-center">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                (1200 rating)
+              </div>
+              <p>22 Total Hours. 155 Lectures. Beginner</p>
+              <h2 class="text-2xl font-bold">$149.9</h2>
+            </div>
+          </div>
+
+          <div class="border p-3 rounded-xl shadow-2xl">
+            <div class="space-y-2">
+              <img
+                class="w-full"
+                src="https://i.ibb.co/s9VGwtj/Rectangle-1080.png"
+                alt=""
+              />
+              <h2 class="text-xl font-bold mt-3">Beginner’s Guide to Design</h2>
+              <p class="opacity-95">By Ronald Richards</p>
+              <div class="rating flex items-center">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                (1200 rating)
+              </div>
+              <p>22 Total Hours. 155 Lectures. Beginner</p>
+              <h2 class="text-2xl font-bold">$149.9</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>
